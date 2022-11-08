@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Quiz Module</title>
+        <script type="text/javascript">
+          let str1;
+        function scores(){
+          var total=globalVariable.score+globalVariable.score2+globalVariable.score1;
+          var cumm=total/50;
+          if(cumm>9.5){
+            str1= "you get admission in vellore campus"
+          }
+          else if((cumm>7.5)&&(cum<9.4)){
+            str1= "you get admission in chennai campus"
+          }
+          else{
+            str1= "you get admission in Amaravathi"
+          }
+          return total,str1,cumm;
+        }
+          }
+          document.querySelector('.total_score').innerHTML = total;
+          document.querySelector('.total_score').innerHTML = cumm;
+          document.querySelector('.total_score').innerHTML = str1;
+        </script>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+        <h1 class="quiz-heading">Quiz</h1>
+        <div class="app-body">
+            <div class="question-card">
+              <p class="total_score">
+                 
+              </p><br>
+              <p class='cumm'>
+
+              </p><br>
+              <p class='result'>
+
+              </p>
+            </div>
+        </div>
+    </body>
+</html>
